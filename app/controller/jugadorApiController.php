@@ -32,7 +32,7 @@
                 && ($prioridad == 'ID' || $prioridad == 'nombre'|| $prioridad == 'posicion'
                 || $prioridad == 'nacionalidad'|| $prioridad == 'id_equipo' )){
 
-                    $jugadores = $this->model->obtenerjugadoresporbd($prioridad, $orden);
+                    $jugadores = $this->model->obtenerjugadoresordenadosbd($prioridad, $orden);
                     $this->view->response($jugadores,200);
 
                 }else{
