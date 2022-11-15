@@ -15,7 +15,7 @@
             return $jugadores;
         }
 
-        function obtenerjugadoresordenbd($prioridad,$orden){
+        function obtenerjugadoresordenadosbd($prioridad,$orden){
          
             $query = $this->db->prepare("SELECT * FROM jugadores_futbol  ORDER BY $prioridad $orden");
             $query->execute();
