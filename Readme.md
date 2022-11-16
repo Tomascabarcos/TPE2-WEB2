@@ -72,7 +72,7 @@
 
     METODO  POST Y ENDPOINT-POST-> http://localhost/proyecto2/api/jugadores
 
-    Con el verbo POST y el recurso jugadores , sirve para agregar un jugador,  en la parte de body del postman
+    Con el metodo y el recurso jugadores , sirve para agregar un jugador,  en la parte de body del postman
     poner en formato raw y  hay que escribir un objeto json (donde tenemos que asignar todos los campos
     de la tabla jugadores_futbol) y por cada campo agregar un valor a eleccion del programador y darle a enviar.
     Una vez modificado podemos ver   un codigo de respuesta acompaño con un mensaje que se agrego exitosamente
