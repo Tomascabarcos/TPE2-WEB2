@@ -72,7 +72,7 @@
 
     METODO  POST Y ENDPOINT-POST-> http://localhost/proyecto2/api/jugadores
 
-    Con el metodo y el recurso jugadores , sirve para agregar un jugador,  en la parte de body del postman
+    Sirve para agregar un jugador,  en la parte de body del postman
     poner en formato raw y  hay que escribir un objeto json (donde tenemos que asignar todos los campos
     de la tabla jugadores_futbol) y por cada campo agregar un valor a eleccion del programador y darle a enviar.
     Una vez modificado podemos ver   un codigo de respuesta acompaño con un mensaje que se agrego exitosamente
@@ -80,6 +80,10 @@
     
     Una vez agregado  se puede ver ese  jugador haciendo una petición a un servicio (GET/jugadores)
     o respectivamente (GET/jugadores/ID) para poder ver solamente ese jugador agregado.
+
+    NOTA: No es necesario agregar el campo ID ya que por cada recurso que agregemos 
+    se asigna solo el campo ID con su valor.
+
 
     CAMPOS DE LA TABLA JUGADORES_FUTBOL
     NOMBRE
@@ -95,8 +99,8 @@
 
     IMPORTANTE :
 
-    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de agregar un recurso  esos
-    valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
+    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de agregar un recurso 
+    con esos valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
     el campo equipo es un campo extra que se puede junto con sus cambios
     cambios solicitando el servicio  GET/JUGADORES   GET/JUGADORES/ID.
 
@@ -109,14 +113,14 @@
     7            ->    Manchester-united
     8            ->    PSG
 
-    Y si no se asigna esos valores al campo id_equipo, no se va a poder  agregar un recurso , ya que los valores 6,7,8 
+    Y si no se asigna esos valores al campo id_equipo, no se va a poder  agregar un jugador , ya que los valores 6,7,8 
     dependen de que cambie tambien los valores del campo equipo.
 
     ----------------------------------------------------------------------------------------------------------
     DELETE/JUGADORES/ID
     METODO DELETE Y ENDPONT-DELETE-> http://localhost/proyecto2/api/jugadores/1
-    Con el METODO DELETE Y el ID, Borra un jugador en especifico , para poder borrar ese jugador se
-    necesita conocer que id que tiene ese jugador.Una vez borrado el jugador  nos muestra un codigo 
+    Borra un jugador en especifico , para poder borrar ese jugador se
+    necesita conocer que id que tiene ese jugador .Una vez borrado el jugador  nos muestra un codigo 
     de respuesta acompaño con un mensaje que se borro exitosamente
     para ver los codigos de repuesta ir a la  (SECCION DE ERRORES).
 
@@ -129,7 +133,9 @@
 
     METODO PUT Y ENPOINT-PUT-> http://localhost/proyecto2/api/jugadores/1
 
-    Con el metodo PUT y el recurso jugadores y el ID. Poder modificar  un jugador hay que conocer que id tiene
+    Con el metodo PUT y el recurso jugadores y el ID.
+
+    Sirve para poder modificar  un jugador hay que conocer que id tiene
     ese jugador , una vez que sabemos que id tiene ese jugador en la parte de body del postman poner en formato
     raw y hay que escribir un objeto json,(donde tenemos que asignar  todos los campos de la tabla jugadores_futbol)
     y por cada campo agregar un valor a eleccion del programador   y darle a enviar.
@@ -154,7 +160,7 @@
 
     IMPORTANTE : 
 
-    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de modificar un recurso  esos
+    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de modificar un recurso con esos
     valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
     el campo equipo es un campo extra que se puede junto con sus cambios
     cambios solicitando el servicio  GET/JUGADORES  o GET/JUGADORES/ID.
