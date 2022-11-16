@@ -9,7 +9,7 @@
         }
 
         function obtenerjugadoresbd() {      
-            $query = $this->db->prepare("SELECT * FROM jugadores_futbol");
+            $query = $this->db->prepare("SELECT jugadores_futbol.*, equipos.nombre_equipo as equipos FROM jugadores_futbol JOIN equipos ON jugadores_futbol.id_equipo = equipos.id_equipo");
             $query->execute();
             $jugadores = $query->fetchAll(PDO::FETCH_OBJ); 
             return $jugadores;
@@ -17,7 +17,7 @@
 
         function obtenerjugadoresordenadosbd($prioridad,$orden){
          
-            $query = $this->db->prepare("SELECT * FROM jugadores_futbol  ORDER BY $prioridad $orden");
+            $query = $this->db->prepare("SELECT jugadores_futbol.*, equipos.nombre_equipo as equipos FROM jugadores_futbol JOIN equipos ON jugadores_futbol.id_equipo = equipos.id_equipo   ORDER BY $prioridad $orden");
             $query->execute();
            
             $jugadores = $query->fetchAll(PDO::FETCH_OBJ); 
@@ -26,7 +26,7 @@
      
 
         function obtenerjugadorbd($id){
-            $query = $this->db->prepare("SELECT * FROM jugadores_futbol   WHERE ID = ?");
+            $query = $this->db->prepare("SELECT jugadores_futbol.*, equipos.nombre_equipo as equipos FROM jugadores_futbol JOIN equipos ON jugadores_futbol.id_equipo = equipos.id_equipo  WHERE ID = ?");
             $query->execute([$id]);
             $jugador = $query->fetch(PDO::FETCH_OBJ);
             return $jugador;

@@ -90,11 +90,27 @@
     EJEMPLO AL ESCRIBIR EL JSON: 
     {
         NOMBRE: TOMAS,
-        NACIONALIDAD: ARGENTINO,
+        ID_EQUIPO: 6
     }
-    
- 
 
+    IMPORTANTE :
+
+    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de agregar un recurso  esos
+    valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
+    el campo equipo es un campo extra que se puede junto con sus cambios
+    cambios solicitando el servicio  GET/JUGADORES   GET/JUGADORES/ID.
+
+
+
+    EJ:
+
+    id equipo          equipo
+    6            ->    Real-madrid
+    7            ->    Manchester-united
+    8            ->    PSG
+
+    Y si no se asigna esos valores al campo id_equipo, no se va a poder  agregar un recurso , ya que los valores 6,7,8 
+    dependen de que cambie tambien los valores del campo equipo.
 
     ----------------------------------------------------------------------------------------------------------
     DELETE/JUGADORES/ID
@@ -133,12 +149,28 @@
     EJEMPLO AL ESCRIBIR EL JSON: 
     {
         NOMBRE: TOMAS,
-        NACIONALIDAD: ARGENTINO
+        ID_EQUIPO: 7
     }
 
-  
+    IMPORTANTE : 
+
+    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de modificar un recurso  esos
+    valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
+    el campo equipo es un campo extra que se puede junto con sus cambios
+    cambios solicitando el servicio  GET/JUGADORES  o GET/JUGADORES/ID.
 
 
+    EJ:
+
+    id equipo          equipo
+    6            ->    Real-madrid
+    7            ->    Manchester-united
+    8            ->    PSG
+
+    Y si no se asigna esos valores al campo id_equipo, no se va a poder  modificar un recurso , ya que los valores 6,7,8 
+    dependen de que cambie tambien los valores del campo equipo.
+
+    ----------------------------------------
     SECCION DE ERRORES   
 
     CODIGOS DE RESPUESTA HTPP
