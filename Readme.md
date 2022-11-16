@@ -100,10 +100,10 @@
 
     IMPORTANTE :
 
-    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de agregar un recurso 
+    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de agregar un jugador
     con esos valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
-    el campo equipo es un campo extra que se puede junto con sus cambios
-    cambios solicitando el servicio  GET/JUGADORES   GET/JUGADORES/ID.
+    el campo equipo es un campo extra que se puede ver junto con sus cambios
+    solicitando el servicio  GET/JUGADORES   GET/JUGADORES/ID.
 
 
 
@@ -114,7 +114,7 @@
     7            ->    Manchester-united
     8            ->    PSG
 
-    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER AGREGAR UN RECURSO)),
+    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER AGREGAR UN JUGADOR)),
     ya que los valores 6,7,8 dependen de que cambie tambien los valores del campo equipo.
 
     ----------------------------------------------------------------------------------------------------------
@@ -161,9 +161,9 @@
 
     IMPORTANTE : 
 
-    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de modificar un recurso con esos
+    Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de modificar un jugador con esos
     valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
-    el campo equipo es un campo extra que se puede junto con sus cambios
+    el campo equipo es un campo extra que se puede ver junto con sus 
     cambios solicitando el servicio  GET/JUGADORES  o GET/JUGADORES/ID.
 
 
@@ -174,7 +174,7 @@
     7            ->    Manchester-united
     8            ->    PSG
 
-    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER MODIFICAR UN RECURSO)),
+    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER MODIFICAR UN JUGADOR)),
      ya que los valores 6,7,8 dependen de que cambie tambien los valores del campo equipo.
 
     ----------------------------------------
