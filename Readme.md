@@ -15,7 +15,8 @@
     Para poder acceder a los endpoint se necesita: 
 
     Recurso: Cualquier informacion que se pueda nombrar puede ser un recurso.
-    METODO HTTP: Se utilizan metodos HTTP de manera explicita  junto a cada recurso para solicitar un servicio deseado: (GET,POST,PUT,DELETE).
+    METODO HTTP: Se utilizan metodos HTTP de manera explicita  junto 
+    a cada recurso para solicitar un servicio deseado: (GET,POST,PUT,DELETE).
 
 
 
@@ -29,33 +30,37 @@
     ----------------------------------------------------
     GET/JUGADORES/ID 
     METODOS GET y ENDPOINT GET-> : http://localhost/proyecto2/api/jugadores/1
-    Accede al detalle de un  jugador a través del id  que tenga ese jugador , para ver que id tiene cada jugador podra encontrarlo 
-    en GET/JUGADORES.  Y nos muestra un  codigo de respuesta para ver el codigo ir a la (SECCION DE ERRORES)
+    Accede al detalle de un  jugador a través del id  que tenga ese jugador , para ver que id tiene cada jugador
+    podra encontrarlo en GET/JUGADORES.  Y nos muestra un  codigo de respuesta
+    para ver el codigo ir a la (SECCION DE ERRORES)
     ------------------------------------------------------
     Parametros GET
 
     ORDENAMIENTO DE COLECCION ENTERA DE JUGADORES
     ------------------------------------------------------
-    Podemos escribir parametros al servicio GET , En este caso para traerme una coleccion entera de jugadores
+    Podemos escribir parametros al servicio GET , En este caso para traerme una
+    coleccion entera de jugadores
     ordenandolos de manera ascendente o descendente, segun su prioridad y orden.
     
-    Agregando el signo? , prioridad y  orden en la url , prioridad tiene que ser igual a unos de los campos de la tabla jugadores_futbol
+    Agregando el signo? , prioridad y  orden en la url , prioridad tiene que ser
+    igual a unos de los campos de la tabla jugadores_futbol
     y el valor de orden lo puede elegir el programador (asc o desc).
 
     EJ: http://localhost/proyecto2/api/jugadores?prioridad=ID&orden=desc
 
-    (Prioridad=ID y orden=desc) me trae todos los campos con id en orden descendete en especifico y el resto de 
-    campos ya que estoy solicitando una coleccion entera de jugadores.
+    (Prioridad=ID y orden=desc) me trae todos los campos con id en orden descendete
+    en especifico y el resto de campos ya que estoy solicitando una coleccion
+    entera de jugadores.
 
 
     IMPORTANTE: 
     Si omite al agregar el parametro prioridad o orden , te 
     trae la coleccion entera de jugadores de forma ascendente.Complete todos los parametros.
 
-    En el caso de  al agregar valores a los parametros,  y no son los valores de la columnas saldra un error.
-    Status-message(estado de mensaje de error)->ingresar correctamente los valores de prioridad o orden.
-    acompañado con un Status-Code( Codigo de respuesta) para saber el codigo de respuesta ir
-    a la (SECCION DE ERRORES).
+    En el caso de  al agregar valores a los parametros,  y no son los valores de
+    la columnas saldra un error.Status-message(estado de mensaje de error)->ingresar correctamente
+    los valores de prioridad o orden.acompañado con un Status-Code( Codigo de respuesta)
+    para saber el codigo de respuesta ir a la (SECCION DE ERRORES).
 
     
      .
@@ -67,9 +72,14 @@
 
     METODO  POST Y ENDPOINT-POST-> http://localhost/proyecto2/api/jugadores
 
-    Con el verbo POST y el recurso jugadores , sirve para agregar un jugador,  en la parte de body del postman poner en formato raw y  hay que escribir un objeto json (donde tenemos que asignar todos los campos de la tabla jugadores_futbol) y por cada campo agregar un valor a eleccion del programador y darle a enviar. Una vez modificado podemos ver   un codigo de respuesta acompaño con un mensaje que se agrego exitosamente el jugador para ver los codigos de repuesta ir a la  (SECCION DE ERRORES)
+    Con el verbo POST y el recurso jugadores , sirve para agregar un jugador,  en la parte de body del postman
+    poner en formato raw y  hay que escribir un objeto json (donde tenemos que asignar todos los campos
+    de la tabla jugadores_futbol) y por cada campo agregar un valor a eleccion del programador y darle a enviar.
+    Una vez modificado podemos ver   un codigo de respuesta acompaño con un mensaje que se agrego exitosamente
+    el jugador para ver los codigos de repuesta ir a la  (SECCION DE ERRORES).
     
-    Una vez agregado  se puede ver ese  jugador haciendo una petición a un servicio (GET/jugadores) o respectivamente (GET/jugadores/ID) para poder ver solamente ese jugador agregado.
+    Una vez agregado  se puede ver ese  jugador haciendo una petición a un servicio (GET/jugadores)
+    o respectivamente (GET/jugadores/ID) para poder ver solamente ese jugador agregado.
 
     CAMPOS DE LA TABLA JUGADORES_FUTBOL
     NOMBRE
@@ -89,8 +99,9 @@
     ----------------------------------------------------------------------------------------------------------
     DELETE/JUGADORES/ID
     METODO DELETE Y ENDPONT-DELETE-> http://localhost/proyecto2/api/jugadores/1
-    Con el METODO DELETE Y el ID, Borra un jugador en especifico , para poder borrar ese jugador se necesita conocer que id que 
-    tiene ese jugador.Una vez borrado el jugador  nos muestra un codigo de respuesta acompaño con un mensaje que se borro exitosamente
+    Con el METODO DELETE Y el ID, Borra un jugador en especifico , para poder borrar ese jugador se
+    necesita conocer que id que tiene ese jugador.Una vez borrado el jugador  nos muestra un codigo 
+    de respuesta acompaño con un mensaje que se borro exitosamente
     para ver los codigos de repuesta ir a la  (SECCION DE ERRORES).
 
     Para confirmar que se borro el jugador solicitar el servicio  (GET/jugadores).
@@ -102,11 +113,15 @@
 
     METODO PUT Y ENPOINT-PUT-> http://localhost/proyecto2/api/jugadores/1
 
-    Con el metodo PUT y el recurso jugadores y el ID. Poder modificar  un jugador hay que conocer que id tiene ese jugador , una vez que sabemos que id tiene ese jugador en la parte de body del postman poner en formato raw y hay que escribir un objeto json,(donde tenemos que asignar  todos los campos de la tabla jugadores_futbol) y por cada campo agregar un valor a eleccion del programador   y darle a enviar.
-    Una vez modificado podemos ver   un codigo de respuesta acompaño con un mensaje que se modifico exitosamente el jugador
-    para ver los codigos de repuesta ir a la  (SECCION DE ERRORES)
+    Con el metodo PUT y el recurso jugadores y el ID. Poder modificar  un jugador hay que conocer que id tiene
+    ese jugador , una vez que sabemos que id tiene ese jugador en la parte de body del postman poner en formato
+    raw y hay que escribir un objeto json,(donde tenemos que asignar  todos los campos de la tabla jugadores_futbol)
+    y por cada campo agregar un valor a eleccion del programador   y darle a enviar.
+    Una vez modificado podemos ver   un codigo de respuesta acompaño con un mensaje que 
+    se modifico exitosamente el jugador para ver los codigos de repuesta ir a la  (SECCION DE ERRORES)
     
-    Para confirmar que jugador se modifico haciendo una petición a un servicio (GET/jugadores) o (GET/jugadores/ID) para poder ver solamente ese jugador modificado.
+    Para confirmar que jugador se modifico haciendo una petición a un servicio (GET/jugadores)
+    o (GET/jugadores/ID) para poder ver solamente ese jugador modificado.
 
     CAMPOS DE LA TABLA JUGADORES_FUTBOL
     NOMBRE
