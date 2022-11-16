@@ -103,7 +103,7 @@
     Al campo id_equipo asignarles valores( 6 , 7 , 8) para que a la hora de agregar un jugador
     con esos valores  poder ver los cambios en el campo equipo ya que estan relacionados esos campos.
     el campo equipo es un campo extra que se puede ver junto con sus cambios
-    solicitando el servicio  GET/JUGADORES   GET/JUGADORES/ID.
+    solicitando el servicio  GET/JUGADORES  o GET/JUGADORES/ID.
 
 
 
