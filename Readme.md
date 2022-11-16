@@ -15,6 +15,7 @@
     Para poder acceder a los endpoint se necesita: 
 
     Recurso: Cualquier informacion que se pueda nombrar puede ser un recurso.
+    En este caso jugadores.
     METODO HTTP: Se utilizan metodos HTTP de manera explicita  junto 
     a cada recurso para solicitar un servicio deseado: (GET,POST,PUT,DELETE).
 
