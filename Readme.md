@@ -113,8 +113,8 @@
     7            ->    Manchester-united
     8            ->    PSG
 
-    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER AGREGAR UN RECURSO)) , ya que los valores 6,7,8 
-    dependen de que cambie tambien los valores del campo equipo.
+    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER AGREGAR UN RECURSO)),
+    ya que los valores 6,7,8 dependen de que cambie tambien los valores del campo equipo.
 
     ----------------------------------------------------------------------------------------------------------
     DELETE/JUGADORES/ID
@@ -173,8 +173,8 @@
     7            ->    Manchester-united
     8            ->    PSG
 
-    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER MODIFICAR UN RECURSO)) , ya que los valores 6,7,8 
-    dependen de que cambie tambien los valores del campo equipo.
+    Y si no se asigna esos valores al campo id_equipo, ((NO SE VA A PODER MODIFICAR UN RECURSO)),
+     ya que los valores 6,7,8 dependen de que cambie tambien los valores del campo equipo.
 
     ----------------------------------------
     SECCION DE ERRORES   
